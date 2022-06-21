@@ -11,28 +11,30 @@
     <main>
         <div id="calculadora-cont">
             <div id="display">
-                <input type="text" value="543" disabled>
+                <input id="tela" type="text" value="" disabled>
             </div>
             <div id="sinaisENumeros">
-                <button id="clear">C</button>
-                <button id="delete">DEL</button>
-                <button class="sinais">+</button>
-                <button class="numeros">7</button>
-                <button class="numeros">8</button>
-                <button class="numeros">9</button>
-                <button class="sinais">-</button>
-                <button class="numeros">4</button>
-                <button class="numeros">5</button>
-                <button class="numeros">6</button>
-                <button class="sinais">*</button>
-                <button class="numeros">1</button>
-                <button class="numeros">2</button>
-                <button class="numeros">3</button>
-                <button class="sinais">/</button>
-                <button id="casaDecimal">,</button>
-                <button id="igual">=</button>
+                <button onclick="limparTela()" id="clear">C</button>
+                <button onclick="deleteTela()"id="delete">DEL</button>
+                <button onclick="somar()" class="sinalSoma">+</button>
+                <button onclick="adicionarTela(num7)" class="numeros">7</button>
+                <button onclick="adicionarTela(num8)" class="numeros">8</button>
+                <button onclick="adicionarTela(num9)" class="numeros">9</button>
+                <button onclick="subtrair()"class="sinalSub">-</button>
+                <button onclick="adicionarTela(num4)" class="numeros">4</button>
+                <button onclick="adicionarTela(num5)" class="numeros">5</button>
+                <button onclick="adicionarTela(num6)" class="numeros">6</button>
+                <button onclick="multiplicar()" class="sinailMult">*</button>
+                <button onclick="adicionarTela(num1)" class="numeros">1</button>
+                <button onclick="adicionarTela(num2)" class="numeros">2</button>
+                <button onclick="adicionarTela(num3)" class="numeros">3</button>
+                <button onclick="dividir()" class="sinalDivis">÷</button>
+                <button onclick="adicionarTela(num0)" class="numeros">0</button>
+                <button onclick="pontoFlutuante()" id="casaDecimal">,</button>
+                <button onclick="resultado()" id="igual">=</button>
             </div>
         </div>
     </main>
 </body>
+<script src="js/script.js"></script>
 </html>
